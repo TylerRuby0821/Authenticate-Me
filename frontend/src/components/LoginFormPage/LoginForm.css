@@ -21,16 +21,52 @@
 }
 .user{
     background-color: #ffffff;
-    margin-left: 10px;
+    width: 300px;
+    height: 40px;
+    padding: 11px 10px 11px 13px;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    outline: 0;
 }
 
 .password{
     background-color: #ffffff;
-    margin-left: 77px;
+    padding: 11px 10px 11px 13px;
+    width: 300px;
+    height: 40px;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+    outline: 0;
 }
 
 .submit{
     background-color: #00b8ff;
+    width: 298px;
+    height: 45px;
     width: 100%;
-    margin: 12px 0 0 0;
+    color: #ffffff;
+    margin: 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: none;
+}
+.errors :active {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 14px 15px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 16px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.33);
+    border: 0;
+    margin-bottom: 0;
+
+}
+
+.error{
+    display: list-item;
 }
