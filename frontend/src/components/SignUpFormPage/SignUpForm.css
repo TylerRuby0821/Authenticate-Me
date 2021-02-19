@@ -1,0 +1,95 @@
+.signup__form--container{
+    margin-top: -50px;
+    position: relative;
+    top: 50%;
+    display:block;
+    justify-content: center;
+    padding: 20px 30px 30px;
+
+}
+
+.signup-form {
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 22.4px;
+    text-align: start;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.email {
+    background-color: #ffffff;
+    width: 300px;
+    height: 40px;
+    padding: 11px 10px 11px 13px;
+    box-sizing: border-box;
+    border: none;
+    outline: 0;
+    margin-bottom: 2px;
+}
+
+.signup_password{
+    background-color: #ffffff;
+    width: 300px;
+    height: 40px;
+    padding: 11px 10px 11px 13px;
+    box-sizing: border-box;
+    border: none;
+    outline: 0;
+    margin-bottom: 2px;
+}
+
+.confirm {
+    background-color: #ffffff;
+    width: 300px;
+    height: 40px;
+    padding: 11px 10px 11px 13px;
+    box-sizing: border-box;
+    border: none;
+    outline: 0;
+    margin-bottom: 2px;
+}
+
+.blog {
+    background-color: #ffffff;
+    width: 300px;
+    height: 40px;
+    padding: 11px 10px 11px 13px;
+    box-sizing: border-box;
+    border: none;
+    outline: 0;
+    margin-bottom: 2px;
+}
+
+.sign_up {
+    background-color: #00b8ff;
+    width: 298px;
+    height: 45px;
+    width: 100%;
+    color: #ffffff;
+    margin-top: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.errors{
+        /* display: block; */
+    /* justify-content: center; */
+    text-align: start;
+    /* padding: 14px 15px; */
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 16px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.55);
+    border: 0;
+    margin: 0;
+}
+
+.error {
+    display: flex;
+    color: #fff;
+    text-align: start;
+}
