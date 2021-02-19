@@ -1,0 +1,36 @@
+.form-container{
+    /* margin-top: -129px; */
+    position: relative;
+    top: 50%;
+    display: block;
+    padding: 20px 30px 30px;
+
+}
+.login_form {
+ font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+ font-size: 16px;
+ line-height: 22.4px;
+ text-align: start;
+ display:flex;
+ justify-content: center;
+ margin-top: 100px;
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+.user{
+    background-color: #ffffff;
+    margin-left: 10px;
+}
+
+.password{
+    background-color: #ffffff;
+    margin-left: 77px;
+}
+
+.submit{
+    background-color: #00b8ff;
+    width: 100%;
+    margin: 12px 0 0 0;
+}
