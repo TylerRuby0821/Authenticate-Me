@@ -8,11 +8,13 @@ const { environment } = require('./config');
 const isProduction = environment === 'production';
 const { ValidationError } = require('sequelize');
 const routes = require('./routes');
+const bodyParser = require("body-parser");
 
 const app = express();
 app.use(morgan('dev'));
 app.use(cookieParser());
-app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 if (!isProduction) {
     app.use(cors());
