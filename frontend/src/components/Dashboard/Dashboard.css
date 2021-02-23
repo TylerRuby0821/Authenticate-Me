@@ -12,10 +12,10 @@
 
 
 .dashboard__container {
-    display: block;
-    background: none;
-    background-color: lightgray;
-    margin: auto;
-    min-height: 100vh;
+    display: flex;
+    max-width: 990px;
     width: 100%;
+    padding: 0 8px;
+    box-sizing: border-box;
+    margin: 40px auto 0;
 }
