@@ -30,10 +30,13 @@ function Navigation({ isLoaded }){
       <header className="header__navBar">
         <div className="navBar__home">
           <div className='navBar__logo'>
-            <NavLink exact to="/">J</NavLink>
+            <NavLink className='letter__logo'exact to="/">J</NavLink>
           </div>
           <div className="navBar__search">
-            <form method="GET" action="/search" role="search" />
+            <input className="nav__search" type="text" placeholder="Search Jumblur" />
+            <button className="nav__search--button" type="submit">
+              <i className="fa fa-search" />
+            </button>
           </div>
         </div>
         {isLoaded && sessionLinks}

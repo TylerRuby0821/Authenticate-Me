@@ -1,9 +1,8 @@
-/* .landing__main{
-    display: flex;
-    align-items: center;
-    position: relative;
-    /* top:150px; */
-/* } */
+
+a {
+    text-decoration: none;
+    color: black;
+}
 .landing__container{
     position: relative;
     display: flex;
@@ -20,27 +19,56 @@
  font-size: 60px;
  font-weight: 700;
  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ margin-bottom: 10px;
 }
 
 .header__text{
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 700;
     max-width: 350px;
 }
 
-.landing__form--container{
-    text-decoration: none;
-}
 .landing__form{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-}
-.button_getStarted {
-    display: block;
-    text-decoration: none;
+    align-items: center;
 }
 
-.button_login {
-    display: block;
+.button__getStarted {
+    font-family: "Favorit", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;;
+    padding: 6px 15px;
+    color: black;
+    background-color: #00b8ff;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    /* margin: auto; */
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
     text-decoration: none;
+    text-align: center;
+    height: 40px;
+    width: 150px;
+}
+
+.button__login {
+    font-family: "Favorit", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;;
+    padding: 6px 15px;
+    color: black;
+    background-color: #00cf35;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin: auto;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+    text-align: center;
+    height: 40px;
+    width: 150px;
 }

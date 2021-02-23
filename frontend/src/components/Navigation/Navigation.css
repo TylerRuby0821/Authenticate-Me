@@ -66,10 +66,10 @@ li a:hover {
 }
 
 .nav__button--login {
-    font-family: "Favorit", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;;
+    font-family: "Favorit", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
     padding: 6px 15px;
     color: black;
-    background-color: green;
+    background-color:#00cf35;
     box-sizing: border-box;
     border-radius: 3px;
     margin-right: 10px;
@@ -80,10 +80,10 @@ li a:hover {
     text-decoration: none;
 }
 .nav__button--signup {
-    font-family: "Favorit", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;;
+    font-family: "Favorit", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
     padding: 6px 15px;
     color: black;
-    background-color: cyan;
+    background-color:  #00b8ff;
     box-sizing: border-box;
     border-radius: 3px;
     font-size: 1rem;
@@ -91,4 +91,30 @@ li a:hover {
     line-height: 1.5;
     text-decoration: none;
     margin-right: 100px;
+}
+.letter__logo{
+    font-size: 40px;
+    font-weight: 700 bold;
+    margin-left: 100px;
+    color: white;
+}
+
+.nav__search{
+    height: 23px;
+    width: 200px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Favorit", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+    background-color: rgba(0, 0, 0, .25);
+    border: none;
+    outline: none;
+}
+
+.nav__search--button{
+    height: 28px;
+    width: 35px;
+}
+
+.nav__search:active{
+    background-color:rgba (255, 255 255, 0.7);
 }
