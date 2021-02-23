@@ -1,0 +1,21 @@
+.navbar__placeholder {
+ position: sticky;
+ display: block;
+ top: 0;
+ z-index: 100;
+ border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+ height: 100px;
+ width: 100%;
+
+}
+
+
+
+.dashboard__container {
+    display: block;
+    background: none;
+    background-color: lightgray;
+    margin: auto;
+    min-height: 100vh;
+    width: 100%;
+}
