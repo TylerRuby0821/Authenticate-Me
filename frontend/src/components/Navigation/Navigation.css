@@ -44,7 +44,7 @@ li a:hover {
 .navBar__home {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     flex-grow: 1;
     max-width: 518px;
     font-weight: bold;
@@ -62,7 +62,7 @@ li a:hover {
 .navBar__session{
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .nav__button--login {

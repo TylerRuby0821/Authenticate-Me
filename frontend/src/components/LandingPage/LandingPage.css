@@ -1,0 +1,46 @@
+/* .landing__main{
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* top:150px; */
+/* } */
+.landing__container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    top: 150px;
+    /* left: 150; */
+    color: white;
+}
+
+.main__header{
+ font-size: 60px;
+ font-weight: 700;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header__text{
+    font-size: 22px;
+    font-weight: 400;
+    max-width: 350px;
+}
+
+.landing__form--container{
+    text-decoration: none;
+}
+.landing__form{
+    display: flex;
+    justify-content: center;
+}
+.button_getStarted {
+    display: block;
+    text-decoration: none;
+}
+
+.button_login {
+    display: block;
+    text-decoration: none;
+}
