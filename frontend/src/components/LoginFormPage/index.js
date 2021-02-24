@@ -38,7 +38,7 @@ function LoginFormPage() {
   return (
     <form className="login_form" onSubmit={handleSubmit}>
       <div className="form-container">
-      <h2 className="header">Placeholder Header</h2>
+      <h2 className="header">Jumblur</h2>
       <div>
         <input
         className= "user"

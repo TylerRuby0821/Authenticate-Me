@@ -25,6 +25,7 @@ background: no-repeat url('https://source.unsplash.com/random/1920x1080');
     display: flex;
     justify-content: center;
     color: #fff;
+    font-size: 50px;
 }
 .user{
     background-color: #ffffff;
