@@ -7,6 +7,7 @@ import * as sessionActions from "./store/session";
 import Navigation from './components/Navigation'
 import LandingPage from './components/LandingPage'
 import Dashboard from './components/Dashboard'
+import Blog from './components/Blog'
 
 function App() {
   const dispatch = useDispatch();
@@ -33,6 +34,9 @@ function App() {
           </Route>
           <Route path='/dashboard'>
             <Dashboard />
+          </Route>
+          <Route path='/blog/:name'>
+            <Blog />
           </Route>
         </Switch>
       )}
