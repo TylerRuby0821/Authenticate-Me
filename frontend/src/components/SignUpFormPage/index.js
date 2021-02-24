@@ -30,11 +30,6 @@ function SignupFormPage() {
     return setErrors(['Confirm Password field must be the same as the Password field']);
   };
 
-  const updateFile = (e) => {
-    const file = e.target.files[0];
-    if (file) setImage(file);
-  };
-
   return (
   <form className='signup-form' onSubmit={handleSubmit}>
     <div className='signup__form--container'>
@@ -73,7 +68,7 @@ function SignupFormPage() {
             placeholder="Blog Name"
             className='blog'
             type="text"
-            value={blog}
+            value={blog.name}
             onChange={(e) => setBlog(e.target.value)}
             required
           />
