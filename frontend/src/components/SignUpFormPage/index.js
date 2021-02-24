@@ -11,6 +11,7 @@ function SignupFormPage() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [blog, setBlog] = useState('')
   const [image, setImage] = useState(null);
   const [errors, setErrors] = useState([]);
 
@@ -20,7 +21,7 @@ function SignupFormPage() {
     e.preventDefault();
     if (password === confirmPassword) {
       setErrors([]);
-      return dispatch(sessionActions.signup({ email, username, password, image}))
+      return dispatch(sessionActions.signup({ email, username, password, blog}))
         .catch(async (res) => {
           const data = await res.json();
           if (data && data.errors) setErrors(data.errors);
@@ -37,7 +38,7 @@ function SignupFormPage() {
   return (
   <form className='signup-form' onSubmit={handleSubmit}>
     <div className='signup__form--container'>
-    <h2 className='header'>Placeholder Header</h2>
+    <h2 className='header'>Jumblur</h2>
         <input
           className='email'
           placeholder='Email'
@@ -72,17 +73,10 @@ function SignupFormPage() {
             placeholder="Blog Name"
             className='blog'
             type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            value={blog}
+            onChange={(e) => setBlog(e.target.value)}
             required
           />
-        </div>
-        <div>
-        <label> Profile Picture: 
-          <input
-            type="file"
-            onChange={updateFile} />
-        </label>
         </div>
         <div>
           <ul className='errors'>

@@ -118,3 +118,7 @@ li a:hover {
 .nav__search:active{
     background-color:rgba (255, 255 255, 0.7);
 }
+
+.profile-dropdown{
+    display: flex;
+}
