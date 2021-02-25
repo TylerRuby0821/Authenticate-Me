@@ -2,9 +2,11 @@ import React from 'react'
 import {useSelector} from 'react-redux'
 import {Redirect} from 'react-router-dom'
 import './Dashboard.css'
+import TextPostModal from '../TextPostModal/index'
 
 function Dashboard() {
     const sessionUser = useSelector(state => state.session.user)
+
 
     if (!sessionUser) return <Redirect to='/login'/>
     return (
@@ -17,14 +19,13 @@ function Dashboard() {
                             </div>
                             <ul className= "content__post--types">
                             <li className='post__types post__selection--1'>
-                                <button className="post__button">
-                                    <span className="post__button--photo"></span>
-                                    Text
-                                </button>
+                                <TextPostModal/>
                             </li>
                             <li className='post__types post__selection--2'>
                                 <button className="post__button">
-                                    <span className="post__button--photo"></span>
+                                    <span className="post__button--photo">
+                                        <img src="quotation-marks.jpg"></img>
+                                    </span>
                                     Photo
                                 </button>
                             </li>
@@ -61,7 +62,8 @@ function Dashboard() {
                             </ul>
                         </div>
                         <div className="content__feed">
-                            Input Feed Here
+                            <div className="user__div"></div>
+                            <div className="post__div"></div>
                         </div>
                     </div>
                 </div>

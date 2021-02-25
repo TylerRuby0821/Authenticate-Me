@@ -2,7 +2,7 @@
 module.exports = (sequelize, DataTypes) => {
   const Post = sequelize.define('Post', {
     title: DataTypes.STRING,
-    content: DataTypes.STRING,
+    text: DataTypes.TEXT,
     userId: DataTypes.INTEGER,
     blogId: DataTypes.INTEGER
   }, {});
