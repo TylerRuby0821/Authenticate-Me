@@ -1,25 +1,28 @@
 import React, { useState } from 'react';
 import { Modal } from '../../context/Modal';
-import TextPost from './TextPost';
+import AudioPost from './AudioPost';
 
-function TextPostModal() {
+function AudioPostModal() {
   const [showModal, setShowModal] = useState(false);
 
   return (
     <>
       <button onClick={() => setShowModal(true)}>
         <span className="post__button--photo">
-            Aa
+          <div className="audio__logo">
+            🔊
+
+          </div>
         </span>
-          Text
+          Audio
         </button>
       {showModal && (
         <Modal onClose={() => setShowModal(false)}>
-          <TextPost />
+          <AudioPost setShowModal= {setShowModal}/>
         </Modal>
       )}
     </>
   );
 }
 
-export default TextPostModal;
+export default AudioPostModal;

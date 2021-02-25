@@ -1,22 +1,21 @@
 import React, { useState } from "react";
 import * as sessionActions from "../../store/session";
 import { useDispatch } from "react-redux";
-import './TextModal.css'
+import './LinkModal.css'
 import {createPost} from '../../store/post'
 
 
-function TextPost({setShowModal}) {
+function LinkPost({setShowModal}) {
   const dispatch = useDispatch();
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
-  const [errors, setErrors] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const post = {
       title,
       content,
-      type: 'text',
+      type: 'link',
     }
     setShowModal(false)
     return dispatch(createPost(post))
@@ -29,11 +28,6 @@ function TextPost({setShowModal}) {
       <div className='modal__text--container'>
         <div className='div__form--header'>
             <form onSubmit={handleSubmit}>
-            <ul>
-                {errors.map((error, idx) => (
-                <li key={idx}>{error}</li>
-                ))}
-            </ul>
 
                 <input
                 className ="modal__title"
@@ -47,8 +41,8 @@ function TextPost({setShowModal}) {
 
                 <input
                 className='modal__input'
+                placeholder='Link Url here..'
                 type="text"
-                placeholder="Your text here.."
                 value={content}
                 onChange={(e) => setContent(e.target.value)}
                 required
@@ -61,4 +55,4 @@ function TextPost({setShowModal}) {
   );
 }
 
-export default TextPost;
+export default LinkPost;

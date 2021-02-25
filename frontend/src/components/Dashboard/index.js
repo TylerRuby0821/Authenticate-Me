@@ -2,7 +2,13 @@ import React from 'react'
 import {useSelector} from 'react-redux'
 import {Redirect} from 'react-router-dom'
 import './Dashboard.css'
-import TextPostModal from '../TextPostModal/index'
+import TextPostModal from '../TextPostModal/textIndex'
+import PhotoPostModal from '../PhotoPostModal/photoIndex'
+import QuotePostModal from '../QuotePostModal/quoteIndex'
+import LinkPostModal from '../LinkPostModal/linkIndex'
+import ChatPostModal from '../ChatPostModal/chatIndex'
+import AudioPostModal from '../AudioPostModal/audioIndex'
+import VideoPostModal from '../VideoPostModal/videoIndex'
 import Feed from '../Feed'
 function Dashboard() {
     const sessionUser = useSelector(state => state.session.user)
@@ -22,42 +28,22 @@ function Dashboard() {
                                 <TextPostModal/>
                             </li>
                             <li className='post__types post__selection--2'>
-                                <button className="post__button">
-                                    <span className="post__button--photo">
-                                        <img src="quotation-marks.jpg"></img>
-                                    </span>
-                                    Photo
-                                </button>
+                                <PhotoPostModal />
                             </li>
                             <li className='post__types post__selection--3'>
-                                <button className="post__button">
-                                    <span className="post__button--photo"></span>
-                                    Quote
-                                </button>
+                                <QuotePostModal />
                             </li>
                             <li className='post__types post__selection--4'>
-                                <button className="post__button">
-                                    <span className="post__button--photo"></span>
-                                    Link
-                                </button>
+                                <LinkPostModal />
                                 </li>
                             <li className='post__types post__selection--5'>
-                                <button className="post__button">
-                                    <span className="post__button--photo"></span>
-                                    Chat
-                                </button>
+                                <ChatPostModal />
                             </li>
                             <li className='post__types post__selection--6'>
-                                <button className="post__button">
-                                    <span className="post__button--photo"></span>
-                                    Audio
-                                </button>
+                                <AudioPostModal />
                             </li>
                             <li className='post__types post__selection--7'>
-                                <button className="post__button">
-                                    <span className="post__button--photo"></span>
-                                    Video
-                                </button>
+                                <VideoPostModal />
                             </li>
                             </ul>
                         </div>

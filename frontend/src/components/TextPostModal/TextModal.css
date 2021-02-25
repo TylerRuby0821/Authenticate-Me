@@ -18,7 +18,7 @@
     border-radius: 3px;
 }
 
-.modal__text {
+.modal__input {
     display: block;
     margin: auto;
     flex-direction: column;
@@ -33,4 +33,8 @@
 .modal__text--button{
     display: flex;
     justify-content: flex-end;
+}
+
+.text__logo{
+    font-size: 28px;
 }

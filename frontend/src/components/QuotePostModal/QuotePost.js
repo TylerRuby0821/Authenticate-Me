@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import * as sessionActions from "../../store/session";
 import { useDispatch } from "react-redux";
-import './TextModal.css'
+import './QuoteModal.css'
 import {createPost} from '../../store/post'
 
 
-function TextPost({setShowModal}) {
+function QuotePost({setShowModal}) {
   const dispatch = useDispatch();
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
@@ -16,7 +16,7 @@ function TextPost({setShowModal}) {
     const post = {
       title,
       content,
-      type: 'text',
+      type: 'quote',
     }
     setShowModal(false)
     return dispatch(createPost(post))
@@ -48,7 +48,7 @@ function TextPost({setShowModal}) {
                 <input
                 className='modal__input'
                 type="text"
-                placeholder="Your text here.."
+                placeholder='"Quote" -Source'
                 value={content}
                 onChange={(e) => setContent(e.target.value)}
                 required
@@ -61,4 +61,4 @@ function TextPost({setShowModal}) {
   );
 }
 
-export default TextPost;
+export default QuotePost;
