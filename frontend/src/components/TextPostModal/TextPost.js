@@ -1,22 +1,27 @@
 import React, { useState } from "react";
 import * as sessionActions from "../../store/session";
 import { useDispatch } from "react-redux";
+import './TextModal.css'
+import {createPost} from '../../store/post'
+
 
 function TextPost() {
   const dispatch = useDispatch();
   const [title, setTitle] = useState("");
-  const [text, setText] = useState("");
+  const [content, setContent] = useState("");
   const [errors, setErrors] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setErrors([]);
-    return dispatch().catch(
-      async (res) => {
-        const data = await res.json();
-        if (data && data.errors) setErrors(data.errors);
-      }
-    );
+    const post = {
+      title,
+      content,
+      type: 'text',
+    }
+    return dispatch(createPost(post))
+
+
+
   };
 
   return (
@@ -30,6 +35,7 @@ function TextPost() {
             </ul>
 
                 <input
+                className ="modal__title"
                 type="text"
                 placeholder='Title'
                 value={title}
@@ -39,14 +45,15 @@ function TextPost() {
 
 
                 <input
+                className='modal__text'
                 type="text"
                 placeholder="Your text here.."
-                value={text}
-                onChange={(e) => setText(e.target.value)}
+                value={content}
+                onChange={(e) => setContent(e.target.value)}
                 required
                 />
 
-            <button type="submit">Post</button>
+            <button className= 'modal__text--button' type="submit">Post</button>
             </form>
         </div>
     </div>

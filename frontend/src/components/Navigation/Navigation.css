@@ -122,3 +122,7 @@ li a:hover {
 .profile-dropdown{
     display: flex;
 }
+
+.li__user--name{
+    color: white;
+}

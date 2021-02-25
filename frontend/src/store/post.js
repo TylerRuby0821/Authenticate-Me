@@ -1,19 +1,25 @@
 import { csrfFetch } from './csrf';
-const CREATE_POST = 'post/createPost'
+const CREATE_POST = 'post/CREATE_POST'
 
-const newPost = (post) => ({
+const newPost = (post) => {
+    return {
     type: CREATE_POST,
-    payload: post
-})
+     payload: post
+    }
+}
 
 
 export const createPost = (post) => async (dispatch) => {
+
     const response = await csrfFetch(`api/posts/`, {
         method: 'POST',
         body: JSON.stringify(post)
     })
+
     const data = await response.json()
+
     dispatch(newPost(data.post));
+   
     return data;
 }
 

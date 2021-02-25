@@ -2,16 +2,18 @@ const express = require('express')
 const asyncHandler = require('express-async-handler');
 
 const { Post } = require('../../db/models')
+const { restoreUser} = require('../../utils/auth')
 
 const router = express.Router();
 
 
 router.post(
     '/',
+    restoreUser,
     asyncHandler(async (req, res) => {
-        const {title, text, userId, blogId} = req.body;
-
-        const post = await Post.create({ title, text, userId, blogId})
+        const {title, content, type} = req.body;
+        const userId = req.user.id
+        const post = await Post.create({ title, content, userId, type})
 
         return res.json({
             post,

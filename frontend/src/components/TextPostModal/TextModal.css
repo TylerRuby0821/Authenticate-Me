@@ -1,4 +1,36 @@
 .modal__text--container{
-    display: inline-block;
+    display: block;
+    margin: auto;
     text-align: left;
+    border-radius: 3px;
+    height: 170px;
+    width: 400px;
+}
+
+.modal__title {
+    display: block;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    height: 55px;
+    width: 85%;
+    border: none;
+    border-radius: 3px;
+}
+
+.modal__text {
+    display: block;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    height: 55px;
+    width: 85%;
+    border: none;
+    border-radius: 3px;
+
+}
+
+.modal__text--button{
+    display: flex;
+    justify-content: flex-end;
 }

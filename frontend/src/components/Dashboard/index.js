@@ -3,7 +3,7 @@ import {useSelector} from 'react-redux'
 import {Redirect} from 'react-router-dom'
 import './Dashboard.css'
 import TextPostModal from '../TextPostModal/index'
-
+import Feed from '../Feed'
 function Dashboard() {
     const sessionUser = useSelector(state => state.session.user)
 
@@ -62,6 +62,7 @@ function Dashboard() {
                             </ul>
                         </div>
                         <div className="content__feed">
+                            <Feed />
                             <div className="user__div"></div>
                             <div className="post__div"></div>
                         </div>

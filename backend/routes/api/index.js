@@ -7,12 +7,10 @@ const { requireAuth } = require('../../utils/auth.js');
 
 const sessionRouter = require('./session.js');
 const usersRouter = require('./users.js');
-const blogRouter = require('./blogs.js')
 const postRouter = require('./posts')
 
 router.use('/session', sessionRouter);
 router.use('/users', usersRouter);
-router.use('/blogs', blogRouter)
-router.use('/post', postRouter)
+router.use('/posts', postRouter)
 
 module.exports = router;

@@ -12,7 +12,7 @@ module.exports = {
         allowNull: false,
         type: Sequelize.STRING
       },
-      text: {
+      content: {
         allowNull: false,
         type: Sequelize.TEXT
       },
@@ -21,10 +21,9 @@ module.exports = {
         type: Sequelize.INTEGER,
         references: {model: 'Users'}
       },
-      blogId: {
+      type: {
         allowNull: false,
-        type: Sequelize.INTEGER,
-        references: {model: 'Blogs'}
+        type: Sequelize.STRING,
       },
       createdAt: {
         allowNull: false,
