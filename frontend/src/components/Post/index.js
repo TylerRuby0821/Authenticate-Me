@@ -32,7 +32,7 @@ function Post() {
              {post.content}
             </div>
 
-            : post.type === 'image' ?
+            : post.type === 'image' || post.type === 'link' ?
             <img src={post.content} width='320' height='500'></img>
 
             : post.type ==='video' ?

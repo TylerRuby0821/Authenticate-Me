@@ -25,7 +25,7 @@ router.get(
     '/',
     asyncHandler(async(req, res) => {
         const posts = await Post.findAll({
-            Order: 'DESC',
+            Order: 'ASC',
             limit: 20,
         })
         res.json({posts})
