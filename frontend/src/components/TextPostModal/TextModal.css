@@ -1,3 +1,6 @@
+body{
+    color: black;
+}
 .modal__text--container{
     display: block;
     margin: auto;

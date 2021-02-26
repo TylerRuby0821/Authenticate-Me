@@ -20,4 +20,16 @@ router.post(
         })
     })
 )
+
+router.get(
+    '/',
+    asyncHandler(async(req, res) => {
+        const posts = await Post.findAll({
+            Order: 'DESC',
+            limit: 20,
+        })
+        res.json({posts})
+
+    })
+)
 module.exports = router;
