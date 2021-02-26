@@ -53,8 +53,8 @@ function TextPost({setShowModal}) {
                 onChange={(e) => setContent(e.target.value)}
                 required
                 />
-
-            <button className= 'modal__text--button' type="submit">Post</button>
+  
+              <button className= 'modal__text--button' type="submit">Post</button>
             </form>
         </div>
     </div>

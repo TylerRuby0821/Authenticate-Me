@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { Modal } from '../../context/Modal';
 import LinkPost from './LinkPost';
+import './LinkModal.css'
 
 function LinkPostModal() {
   const [showModal, setShowModal] = useState(false);
 
   return (
     <>
-      <button onClick={() => setShowModal(true)}>
+      <button className="link__post--button" onClick={() => setShowModal(true)}>
         <span className="post__button--photo">
             🔗
         </span>

@@ -20,9 +20,7 @@ function Dashboard() {
                 <div className="content__container">
                     <div className="content__container--inner">
                         <div className="content__container--posts">
-                            <div className="profile__pic">
-                             profile pic
-                            </div>
+                            
                             <ul className= "content__post--types">
                             <li className='post__types post__selection--1'>
                                 <TextPostModal/>

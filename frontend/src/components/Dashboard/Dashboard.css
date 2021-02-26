@@ -8,7 +8,7 @@ body{
     width: 100%;
     padding: 0 8px;
     box-sizing: border-box;
-    margin-top: 50px;
+    margin-top: 100px;
     margin: 40px auto 0;
     background-color: black;
 }
@@ -19,6 +19,7 @@ body{
     display: flex;
     align-items: flex-end;
     flex-direction: column;
+    margin-top: 80px;
 }
 .content__container--inner{
     max-width: 540px;
@@ -27,15 +28,15 @@ body{
 }
 
 .content__container--posts {
-display: flex;
-align-items: center;
-justify-content: space-between;
-position: relative;
-box-sizing: border-box;
-padding: 15px 5px;
-min-height: 100px;
-border-radius: 3px;
-margin-bottom: 20px;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    padding: 15px 5px;
+    min-height: 100px;
+    border-radius: 3px;
+    margin: auto;
+    background-color: lightgrey;
+    color: white;
 }
 
 .content__post--types {

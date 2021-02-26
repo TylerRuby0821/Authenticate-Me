@@ -32,13 +32,34 @@ function Post() {
              {post.content}
             </div>
 
-            : post.type === 'image' || post.type === 'link' ?
+            : post.type === 'image' ?
             <img src={post.content} width='320' height='500'></img>
 
             : post.type ==='video' ?
-            <video width="320" height="240" src={post.content}></video>
-            :
-            <audio controls src={post.content} type="audio/mpeg"></audio>
+            <iframe
+            id="ytplayer"
+            type="text/html"
+            width="480"
+            height="270"
+            src={post.content}
+            frameborder="0"
+            allowfullscreen />
+
+            : post.type === 'link' ?
+            <button>
+              <a href={post.content}>{post.content}</a>
+
+            </button>
+
+            : post.type === 'audio' ?
+            <iframe
+            frameborder="0"
+            width="400"
+            height="200"
+            src={post.content}>
+            </iframe>
+            
+            : <h2>Content Type Not Supported!</h2>
            }
          {/* </> */}
         </section>

@@ -1,7 +1,7 @@
 const express = require('express')
 const asyncHandler = require('express-async-handler');
 
-const { Post } = require('../../db/models')
+const { Post, sequelize } = require('../../db/models')
 const { restoreUser} = require('../../utils/auth')
 
 const router = express.Router();
@@ -25,7 +25,7 @@ router.get(
     '/',
     asyncHandler(async(req, res) => {
         const posts = await Post.findAll({
-            Order: 'ASC',
+            order: [['createdAt', 'DESC']],
             limit: 20,
         })
         res.json({posts})

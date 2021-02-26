@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { Modal } from '../../context/Modal';
 import VideoPost from './VideoPost';
+import './VideoModal.css'
 
 function VideoPostModal() {
   const [showModal, setShowModal] = useState(false);
 
   return (
     <>
-      <button onClick={() => setShowModal(true)}>
+      <button className="video__post--button"onClick={() => setShowModal(true)}>
         <span className="post__button--photo">
           <div className="video__logo">
             📹

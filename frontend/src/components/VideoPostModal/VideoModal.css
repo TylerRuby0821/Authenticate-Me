@@ -1,3 +1,11 @@
 .video__logo{
     font-size: 25px;
 }
+
+.video__post--button{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
