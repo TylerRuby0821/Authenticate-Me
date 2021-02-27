@@ -22,9 +22,9 @@ function Post() {
       {posts.map(post => (
         <section className='post__container'>
           {/* <> */}
-            <div className="post__title--container">
+            <h2 className="post__title--container">
               {post.title}
-            </div>
+            </h2>
 
             {post.type === 'text' || post.type === 'chat' || post.type === 'quote' ?
 
@@ -58,7 +58,7 @@ function Post() {
             height="200"
             src={post.content}>
             </iframe>
-            
+
             : <h2>Content Type Not Supported!</h2>
            }
          {/* </> */}

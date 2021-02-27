@@ -32,7 +32,11 @@ function Navigation({ isLoaded }){
       <header className="header__navBar">
         <div className="navBar__home">
           <div className='navBar__logo'>
+           {sessionUser ?
+            <NavLink className='letter__logo'exact to="/dashboard">J</NavLink>
+            :
             <NavLink className='letter__logo'exact to="/">J</NavLink>
+           }
           </div>
           <div className="navBar__search">
             <input className="nav__search" type="text" placeholder="Search Jumblur" />

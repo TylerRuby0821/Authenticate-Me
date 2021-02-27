@@ -34,13 +34,13 @@ function ProfileButton({ user }) {
       <i className="fas fa-portrait"/>
       </button>
       {showMenu && (
-        <ul className="profile-dropdown">
-          {/* <li>{blog.name}</li> */}
-          <li className='li__user--name'>{user.email}</li>
-          <li>
+        <div className="profile-dropdown">
+          <div className="top__dropdown--container">
+            <h2>Account</h2>
             <button onClick={logout}>Log Out</button>
-          </li>
-        </ul>
+          </div>
+          <div className='li__user--name'>{user.email}</div>
+        </div>
       )}
     </>
   );

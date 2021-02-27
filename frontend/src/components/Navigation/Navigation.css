@@ -120,9 +120,29 @@ li a:hover {
 }
 
 .profile-dropdown{
+    position: absolute;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 50px;
+    right: 10px;
+    height:400px;
+    width: 200px;
+    background-color: lightgray;
 }
 
 .li__user--name{
     color: white;
+}
+
+.fas.fa-portrait{
+    font-size: 20px;
+}
+
+.top__dropdown--container{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    height: 50px;
+    width: 100%;
 }
