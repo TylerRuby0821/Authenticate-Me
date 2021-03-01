@@ -35,6 +35,60 @@ module.exports = {
           userId: 3,
           type: 'text'
         },
+        {
+          title: faker.lorem.word(),
+          content: faker.image.imageUrl(),
+          userId: 2,
+          type: 'image'
+        },
+        {
+          title: faker.lorem.word(),
+          content: faker.image.imageUrl(),
+          userId: 2,
+          type: 'image'
+        },
+        {
+          title: faker.lorem.word(),
+          content: faker.lorem.text(),
+          userId: 2,
+          type: 'text'
+        },
+        {
+          title: faker.lorem.word(),
+          content: faker.image.animals(),
+          userId: 2,
+          type: 'image'
+        },
+        {
+          title: faker.lorem.word(),
+          content: faker.lorem.text(),
+          userId: 2,
+          type: 'text'
+        },
+        {
+          title: faker.lorem.word(),
+          content: faker.image.abstract(),
+          userId: 2,
+          type: 'image'
+        },
+        {
+          title: faker.lorem.word(),
+          content: faker.lorem.text(),
+          userId: 2,
+          type: 'text'
+        },
+        {
+          title: faker.lorem.word(),
+          content: faker.image.business(),
+          userId: 2,
+          type: 'image'
+        },
+        {
+          title: faker.lorem.word(),
+          content: faker.image.fashion(),
+          userId: 2,
+          type: 'image'
+        },
 
       ], {});
   },
