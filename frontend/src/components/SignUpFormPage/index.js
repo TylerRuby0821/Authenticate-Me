@@ -10,7 +10,7 @@ function SignupFormPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const [blog, setBlog] = useState('')
+  // const [blog, setBlog] = useState('')
   const [image, setImage] = useState(null);
   const [errors, setErrors] = useState([]);
 
@@ -20,7 +20,7 @@ function SignupFormPage() {
     e.preventDefault();
     if (password === confirmPassword) {
       setErrors([]);
-      return dispatch(sessionActions.signup({ email, password, blog}))
+      return dispatch(sessionActions.signup({ email, password}))
         .catch(async (res) => {
           const data = await res.json();
           if (data && data.errors) setErrors(data.errors);
@@ -62,7 +62,7 @@ function SignupFormPage() {
             required
           />
         </div>
-        <div>
+        {/* <div>
           <input
             placeholder="Blog Name"
             className='blog'
@@ -71,7 +71,7 @@ function SignupFormPage() {
             onChange={(e) => setBlog(e.target.value)}
             required
           />
-        </div>
+        </div> */}
         <div>
           <ul className='errors'>
               {errors.map((error, idx) => <li className='error' key={idx}>{error}</li>)}
