@@ -12,7 +12,7 @@ a {
     height: 100%;
     top: 150px;
     /* left: 150; */
-    color: white;
+    color: #EDF5E1;
 }
 
 .main__header{
@@ -38,8 +38,8 @@ a {
 .button__getStarted {
     font-family: "Favorit", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;;
     padding: 6px 15px;
-    color: black;
-    background-color: #00b8ff;
+    color: #EDF5E1;
+    background-color: #05386B;
     box-sizing: border-box;
     border-radius: 3px;
     margin-top: 12px;
@@ -58,8 +58,8 @@ a {
 .button__login {
     font-family: "Favorit", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;;
     padding: 6px 15px;
-    color: black;
-    background-color: #00cf35;
+    color: #05386B;
+    background-color: #EDF5E1;
     box-sizing: border-box;
     border-radius: 3px;
     margin: auto;

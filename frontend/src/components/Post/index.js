@@ -33,7 +33,9 @@ function Post() {
             </div>
 
             : post.type === 'image' ?
-            <img src={post.content} width='320' height='500'></img>
+            <div className="image__div">
+              <img className= "content__picture"src={post.content}></img>
+            </div>
 
             : post.type ==='video' ?
             <iframe
@@ -62,6 +64,7 @@ function Post() {
             : <h2>Content Type Not Supported!</h2>
            }
          {/* </> */}
+         <div className="bottom__icons--bar"></div>
         </section>
       ))}
       </div>

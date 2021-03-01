@@ -1,6 +1,7 @@
 body{
     color: black;
 }
+
 .modal__text--container{
     display: block;
     margin: auto;
@@ -9,6 +10,7 @@ body{
     border-radius: 10px;
     height: 240px;
     width: 400px;
+    background-color: #05386B;
 }
 
 .modal__title {
@@ -22,6 +24,8 @@ body{
     border-radius: 3px;
     font-size: 40px;
     margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #05386B;
 }
 
 .modal__input {
@@ -33,6 +37,8 @@ body{
     width: 85%;
     border: none;
     border-radius: 3px;
+    margin-top: 20px;
+    background-color: #05386B;
 
 }
 
@@ -47,8 +53,8 @@ body{
     justify-content: center;
     box-sizing: border-box;
     border-radius: 30px;
-    background-color: #00b8ff;
-    border: 2px solid #018bc2;
+    background-color: #5CDB95;
+    border: 2px solid #5CDB95;
     width: 20%;
     height: 20%;
     /* background-color: transparent; */
@@ -69,4 +75,5 @@ body{
     background-color: transparent;
     border: none;
     cursor: pointer;
+    color: #EDF5E1;
 }

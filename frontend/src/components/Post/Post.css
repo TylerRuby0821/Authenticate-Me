@@ -2,12 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(39, 38, 38);
+    background-color: #05386B;
     /* border: 2px dashed green; */
     box-sizing: border-box;
     border-radius: 3px;
     margin: 10px 0;
     min-height: 250px;
+    max-height: 500px;
     width: 100%;
 
 }
@@ -20,16 +21,33 @@
     width: 90%;
     border-bottom:1px solid rgb(102, 100, 100);
     /* margin-left: 2px; */
-    color: rgb(146, 145, 145);
+    color: whitesmoke;
 }
 
 .post__content--container {
     display: block;
-    box-sizing: border-box;
-    /* border: 2px solid black; */
-    border-radius: 3px;
+    max-height: 500px;
     width: 100%;
+    padding: 10px;
     margin-bottom: 30px;
     margin-left: 25px;
-    color: rgb(146, 145, 145);
+    color: whitesmoke;
+}
+
+.bottom__icons--bar{
+    height: 30px;
+    width: 100%;
+}
+
+.content__picture {
+    max-height: 80%;
+    max-width: 40%;
+    object-fit: cover; 
+}
+
+.image__div{
+    display: flex;
+    justify-content: center;
+    max-width:100%;
+    max-height:100%;
 }

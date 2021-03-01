@@ -16,16 +16,16 @@
  display:flex;
  justify-content: center;
  margin-top: 100px;
- background: no-repeat url('https://source.unsplash.com/random/1920x1080');
+
 }
 .header{
     display: flex;
     justify-content: center;
-    color: #fff;
+    color: #EDF5E1;
     font-size: 50px;
 }
 .user{
-    background-color: #ffffff;
+    background-color: #EDF5E1;
     width: 300px;
     height: 40px;
     padding: 11px 10px 11px 13px;
@@ -33,24 +33,33 @@
     border: none;
     outline: 0;
     margin-bottom: 2px;
+    color: #05386B;
 }
 
+.user::placeholder{
+    color: #05386B;
+}
+
+.password::placeholder{
+    color: #05386B;
+}
 .password{
-    background-color: #ffffff;
+    background-color: #EDF5E1;
     padding: 11px 10px 11px 13px;
     width: 300px;
     height: 40px;
     box-sizing: border-box;
     border: none;
     outline: 0;
+    color: #05386B;
 }
 
 .submit{
-    background-color: #00b8ff;
+    background-color: #05386B;
     width: 298px;
     height: 45px;
     width: 100%;
-    color: #ffffff;
+    color: #EDF5E1;
     margin-top: 8px;
     font-size: 16px;
     box-sizing: border-box;

@@ -30,14 +30,14 @@ function ProfileButton({ user }) {
 
   return (
     <>
-      <button onClick={openMenu}>
+      <button className="profile__button"onClick={openMenu}>
       <i className="fas fa-portrait"/>
       </button>
       {showMenu && (
         <div className="profile-dropdown">
           <div className="top__dropdown--container">
-            <h2>Account</h2>
-            <button onClick={logout}>Log Out</button>
+            <h3 className="account__label">Account</h3>
+            <button className="logout__button"onClick={logout}>Log Out</button>
           </div>
           <div className='li__user--name'>{user.email}</div>
         </div>

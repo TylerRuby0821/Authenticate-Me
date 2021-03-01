@@ -68,8 +68,8 @@ li a:hover {
 .nav__button--login {
     font-family: "Favorit", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
     padding: 6px 15px;
-    color: black;
-    background-color:#00cf35;
+    color: #05386B;
+    background-color:#EDF5E1;
     box-sizing: border-box;
     border-radius: 3px;
     margin-right: 10px;
@@ -82,8 +82,8 @@ li a:hover {
 .nav__button--signup {
     font-family: "Favorit", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
     padding: 6px 15px;
-    color: black;
-    background-color:  #00b8ff;
+    color: #EDF5E1;
+    background-color:  #05386B;
     box-sizing: border-box;
     border-radius: 3px;
     font-size: 1rem;
@@ -96,7 +96,7 @@ li a:hover {
     font-size: 40px;
     font-weight: 700 bold;
     margin-left: 100px;
-    color: white;
+    color: #05386B;
 }
 
 .nav__search{
@@ -105,18 +105,26 @@ li a:hover {
     font-size: 1rem;
     font-weight: 400;
     font-family: "Favorit", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
-    background-color: rgba(0, 0, 0, .25);
+    background-color: rgba(5, 56, 107, .25);
     border: none;
     outline: none;
+    color: #EDF5E1;
+}
+::placeholder{
+    color: #EDF5E1;
 }
 
 .nav__search--button{
     height: 28px;
     width: 35px;
+    background: transparent;
+    border: none;
+    margin-right: 30px;
+
 }
 
 .nav__search:active{
-    background-color:rgba (255, 255 255, 0.7);
+    background-color: rgba(5, 56, 107, .25)
 }
 
 .profile-dropdown{
@@ -128,21 +136,46 @@ li a:hover {
     right: 10px;
     height:400px;
     width: 200px;
-    background-color: lightgray;
+    background-color: #05386B;
+    border-radius: 8px;
 }
 
 .li__user--name{
-    color: white;
+    color: #EDF5E1;
 }
 
 .fas.fa-portrait{
     font-size: 20px;
+    color: #05386B;
+    width: 30px;
+    /* background-color: #5CBD95; */
 }
 
 .top__dropdown--container{
     display: flex;
     justify-content: space-between;
-    color: white;
-    height: 50px;
+    color: #EDF5E1;
+    height: 30px;
     width: 100%;
+}
+
+.profile__button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.account__label {
+    margin: auto;
+    color: #EDF5E1;
+}
+
+.logout__button {
+    background: transparent;
+    border: none;
+    color: #EDF5E1;
+    margin-right: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
 }
