@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import * as sessionActions from "../../store/session";
 import { useDispatch } from "react-redux";
 import './LinkModal.css'
-import {createPost} from '../../store/post'
+import {createPost, getAllPosts} from '../../store/post'
 
 
 function LinkPost({setShowModal}) {
@@ -18,7 +18,8 @@ function LinkPost({setShowModal}) {
       type: 'link',
     }
     setShowModal(false)
-    return dispatch(createPost(post))
+    dispatch(createPost(post))
+    return dispatch(getAllPosts())
 
 
 

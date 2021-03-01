@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import * as sessionActions from "../../store/session";
 import { useDispatch } from "react-redux";
 import './AudioModal.css'
-import {createPost} from '../../store/post'
+import {createPost, getAllPosts} from '../../store/post'
 
 
 function AudioPost({setShowModal}) {
@@ -19,7 +19,8 @@ function AudioPost({setShowModal}) {
       type: 'audio',
     }
     setShowModal(false)
-    return dispatch(createPost(post))
+    dispatch(createPost(post))
+    return dispatch(getAllPosts())
 
 
 

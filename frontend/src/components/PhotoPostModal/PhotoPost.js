@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import * as sessionActions from "../../store/session";
 import { useDispatch } from "react-redux";
 import './PhotoModal.css'
-import {createPost} from '../../store/post'
+import {createPost, getAllPosts} from '../../store/post'
 
 
 function PhotoPost({setShowModal}) {
@@ -18,7 +18,8 @@ function PhotoPost({setShowModal}) {
       type: 'image',
     }
     setShowModal(false)
-    return dispatch(createPost(post))
+    dispatch(createPost(post))
+    return dispatch(getAllPosts())
 
 
 

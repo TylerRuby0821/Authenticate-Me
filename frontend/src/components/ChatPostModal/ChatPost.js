@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import * as sessionActions from "../../store/session";
 import { useDispatch } from "react-redux";
 import './ChatModal.css'
-import {createPost} from '../../store/post'
+import {createPost, getAllPosts} from '../../store/post'
 
 
 function ChatPost({setShowModal}) {
@@ -19,7 +19,8 @@ function ChatPost({setShowModal}) {
       type: 'chat',
     }
     setShowModal(false)
-    return dispatch(createPost(post))
+    dispatch(createPost(post))
+    return dispatch(getAllPosts())
 
 
 
@@ -48,7 +49,7 @@ function ChatPost({setShowModal}) {
                 <input
                 className='modal__input'
                 type="text"
-                placeholder="Jim: Wow isnt this just nifty? &#10;Tommy: It really is!"
+                placeholder={`Jim: Wow isnt this just nifty? Tommy: It really is!`}
                 value={content}
                 onChange={(e) => setContent(e.target.value)}
                 required

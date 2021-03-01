@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import * as sessionActions from "../../store/session";
 import { useDispatch } from "react-redux";
 import './TextModal.css'
-import {createPost} from '../../store/post'
+import {createPost, getAllPosts } from '../../store/post'
 
 
 function TextPost({setShowModal}) {
@@ -19,7 +19,8 @@ function TextPost({setShowModal}) {
       type: 'text',
     }
     setShowModal(false)
-    return dispatch(createPost(post))
+    dispatch(createPost(post))
+    return dispatch(getAllPosts())
 
 
 
@@ -53,7 +54,7 @@ function TextPost({setShowModal}) {
                 onChange={(e) => setContent(e.target.value)}
                 required
                 />
-  
+
               <button className= 'modal__text--button' type="submit">Post</button>
             </form>
         </div>
